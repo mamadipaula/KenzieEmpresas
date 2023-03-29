@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/reset.css">
+    <link rel="stylesheet" href="./src/style/geral.css">
+    <link rel="stylesheet" href="./src/style/index.css">
+    <title>Kenzie empresas</title>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <button id="btnCadastrarModal">Cadastrar</button>
+    </nav>
+    <div class="container">
+        <section class="empresasCadastradas">
+            <div class="headerEmpresasCadastradas">
+                <h2>Empresas Cadastradas</h2>
+                <select id="selectSetor">
+                    <option value="null">Selecione o setor da empresa</option>
+                    <option value="Alimenticio">Alimenticio</option>
+                    <option value="Automotiva">Automotiva</option>
+                    <option value="TI">TI</option>
+                </select>
+                <button id="btnBuscaSetor">Pesquisar</button>
+            </div>
+            <ul class="listaEmpresasCadastradas" id="ulEmpresas"></ul>
+        </section>
+        <form class="login">
+            <h2>Login</h2>
+            <input type="email" id="inputEmail" placeholder="Digite seu e-mail">
+            <input type="password" id="inputPassword" placeholder="Digite sua senha">
+            <button type="submit" id="btnEntrar">Entrar</button>
+        </form>
+    </div>
+    <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>

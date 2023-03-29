@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/geral.css">
+    <link rel="stylesheet" href="../style/dashboardAdmin.css">
+    <title>Dashboard Admin</title>
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <button id="btnLogout">Logout</button>
+    </nav>
+    <div class="bodyDashboard">
+        <div class="funcionalidades">
+            <section class="dashboard">
+                <h2>Setores Cadastrados</h2>
+                <ul id="setores"></ul>
+            </section>
+            <section class="novaEmpresa">
+                <h2>Cadastrar nova empresa</h2>
+                <form class="formCadastrar">
+                    <input type="text" id="inputNomeNovaEmpresa" placeholder="Nome da empresa">
+                    <input type="text" id="inputHoraAbertura" placeholder="Hora de abertura da empresa">
+                    <input type="text" id="inputDescricao" placeholder="Descrição da empresa">
+                    <p>Setor da empresa</p>
+                    <select id="setoresOption"></select>
+                    <button id="btnCadastrarEmpresa">Cadastrar</button>
+                </form>
+            </section>
+            <section class="empresasCadastradas">
+                <h2>Empresas Cadastradas</h2>
+                <div class="buscaPorNome">
+                    <input id="inputBuscar" type="text" placeholder="Digite o nome da empresa">
+                    <button id="btnProcura">Procurar</button>
+                </div>
+                <div class="selecionarSetor">
+                    <select id="selectSetor">
+                        <option value="null">Selecione o setor da empresa</option>
+                        <option value="Alimenticio">Alimenticio</option>
+                        <option value="Automotiva">Automotiva</option>
+                        <option value="TI">TI</option>
+                    </select>
+                    <button id="btnBuscaSetor">Pesquisar</button>
+                </div>
+                <div>
+                    <ul id="listaEmpresasCadastradas" class="listaEmpresasCadastradas"></ul>
+                </div>
+            </section>
+            <section class="funcionarios">
+                <div class="renderFuncionarios">
+                    <h2>Funcionários Cadastrados</h2>
+                    <ul id="todosFuncionarios" class="todosFuncionarios"></ul>
+                </div>
+            </section>
+            <section class="desempregados">
+                <div class="renderDesempregados">
+                    <h2>Funcionários sem departamento</h2>
+                    <ul id="funcionariosDesempregados" class="funcionariosDesempregados"></ul>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+
+    <script type="module" src="../scripts/dashboardAdmin.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+
+.modal_cadastrar-departamento {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 60%;
+    background-color: var(--primary);
+    padding: 40px;
+    border-radius: 8px;
+    position: fixed;
+}
+
+.modal_cadastrar-departamento > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.modal_cadastrar-departamento ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.modal_cadastrar-departamento ul li {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--grey-4);
+    border-radius: 8px;
+}
+
+.modal_content > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.funcionalidades {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    width: 60%;
+}
+
+.dashboard {
+    background-color: var(--primary);
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.dashboard > ul {
+    display: flex;
+    gap: 20px;
+}
+
+.novaEmpresa {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+
+.formCadastrar{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+}
+
+.empresasCadastradas {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: var(--primary);
+    border-radius: 8px;
+}
+
+.buscaPorNome {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.buscaPorNome > input {
+    width: 85%;
+}
+
+.selecionarSetor {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.selecionarSetor > select {
+    width: 85%;
+}
+
+.listaEmpresasCadastradas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.listaEmpresasCadastradas > li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.renderFuncionarios {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    
+}
+
+.todosFuncionarios {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todosFuncionarios li {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.renderDesempregados {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.funcionariosDesempregados {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.funcionariosDesempregados li {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.divHeader {
+    display: flex;
+    gap: 20px;
+}
+
+.divHeader > button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.divHeader > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.carrosel {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    align-items: center;
+}
+
+.departamento {
+    flex: none;
+    background-color: var(--grey-4);
+    width: 100%;
+    height: 50px;
+    scroll-snap-align: start;
+    padding: 20px; 
+}
+
+.container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+.container::-webkit-scrollbar-track {
+    background: var(--primary); 
+  }
+  
+.container::-webkit-scrollbar-thumb {
+    background-color: var(--grey-4); 
+    border-radius: 20px;        
+    border: 3px solid var(--primary); 
+  }
+
+
+@media (min-width: 768px) {
+    .dashboard {
+        align-items: center;
+    }
+    
+}
